@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Crossword</title>
+  </head>
+
+  <body style="background-color: #C7C8CC">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #8EACCD"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+          "
+          >Crossword Game</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="title-content">
+      <p>CROSSWORD</p>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button
+        class="btn btn-primary"
+        type="button"
+        id="toggle"
+        style="background-color: #8EACCD"
+      >
+        <a>Mulai</a>
+      </button>
+
+      <button
+        class="btn btn-primary"
+        id="toggleRestart"
+        style="background-color: #8EACCD"
+      >
+        <a href="index.html" id="toggleRestartBack">Restart</a>
+      </button>
+    </div>
+
+    <section>
+      <div class="target">
+        <div class="container" id="content">
+          <div class="title-content">
+            <b
+              >SKOR ANDA:
+              <div class="score" id="score"></div
+            ></b>
+          </div>
+
+          <div class="row">
+            <div class="col" style="margin-left: 20px">
+              <br />
+              <br />
+              <table class="tabel">
+                <!-- Soal mendatar no 1 khadijah -->
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t2 d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="t3 d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d2" type="text" maxlength="1" />
+                  </td>
+                </tr>
+
+                <!-- Soal Menurun no 1,2 Khandaq dan idris-->
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t3" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t3" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t5" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                
+
+                <!-- Soal mendatar no 2 asiyah-->
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                    <td class="kotak">
+                      <input class="t2" type="text" maxlength="1" />
+                    </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="d3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="t3 d3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="t5 d3" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d3" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t2" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t5" type="text" maxlength="1" />
+                  </td>
+                </tr>
+
+                <!-- Soal Mendatar no 3 al-quran-->
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4 d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="t2 d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak">
+                    <input class="d4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t5" type="text" maxlength="1" />
+                  </td>
+                </tr>
+
+                <!-- Soal Menurun no 3 Al-insyirah -->
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t5" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                    
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="t5 d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="t6 d5" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d5" type="text" maxlength="1" />
+                    </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t6" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t6" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t6" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                  <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak"></td>
+                    <td class="kotak">
+                      <input class="t6 d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                    <td class="kotak">
+                      <input class="d6" type="text" maxlength="1" />
+                    </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="kotak"></td>
+                  <td class="kotak">
+                    <input class="t4" type="text" maxlength="1" />
+                  </td>
+                </tr>
+            
+            <div class="col align-self-center">
+              <br />
+              <br />
+              <h4>Soal Menurun</h4>
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>
+                    1. Nama perang dengan strategi membuat parit.
+                  </p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="t2"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>2. Siapa nabi yang meninggal sandalnya di surga?</p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="t3"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                    <img src="Al insyirah ayat 5 & 6.jpeg" alt="">
+                  <p>3. Ayat tersebut termasuk didalam surat...</p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="t4"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>4. Nama anak nabi Muhammad yang menikah dengan yang berbeda agama.</p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="t5"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>5. Salah satu mukjizat nabi Muhammad adalah dapat membelah...</p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="t6"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <br />
+              <h4>Soal Mendatar</h4>
+              <div class="d-flex flex-row align-items-baseline">
+                <div>
+                  <p>
+                    1. Nama istri nabi muhammad yang pertama adalah...
+                  </p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="d2"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>
+                    2. Nama istri fir'aun adalah...
+                  </p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="d3"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>
+                    3. Kitab yang diturunkan kepada rasulullah.
+                  </p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="d4"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                      margin-left: 182px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>4. Hewan yang membantu nabi Muhammad ketika bersembunyi di gua hiro.</p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="d5"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                      margin-left: 85.5px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="pr-2">
+                  <p>
+                    5. Salah satu sahabat nabi Muhammad yang gemar bergurau ialah...
+                  </p>
+                </div>
+                <div class="pr-2">
+                  <button
+                    type="button"
+                    name="d6"
+                    style="
+                      background-color: #8EACCD;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      color: white;
+                      border-radius: 5px;
+                      margin-left: 182px;
+                    "
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JS Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
